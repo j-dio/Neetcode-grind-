@@ -9,6 +9,7 @@ This is a NeetCode 150 grinding repository for learning data structures, algorit
 ## Working Philosophy
 
 **User's Learning Goals:**
+
 1. **Think independently first** - User wants to reason through problems themselves
 2. **Learn optimal patterns** - Focus on most efficient solutions and common patterns
 3. **Master data structures** - Build intuition for when and how to use each structure
@@ -16,6 +17,7 @@ This is a NeetCode 150 grinding repository for learning data structures, algorit
 5. **Career preparation** - Build problem-solving skills for technical interviews
 
 **Claude's Role:**
+
 - **Provide syntax hints only** - List relevant JavaScript methods, data structures, and techniques needed for the problem WITHOUT revealing the solution logic
 - **Pattern identification** - Help identify which pattern category a problem belongs to
 - **Batch similar problems** - Suggest related problems that use the same pattern
@@ -66,6 +68,7 @@ This is a NeetCode 150 grinding repository for learning data structures, algorit
 ## JavaScript Syntax Reference
 
 ### Common Data Structures:
+
 ```javascript
 // Map - O(1) lookup, maintains insertion order
 const map = new Map()
@@ -82,44 +85,47 @@ set.delete(value)
 
 // Stack (using array)
 const stack = []
-stack.push(item)    // O(1)
-stack.pop()         // O(1)
+stack.push(item) // O(1)
+stack.pop() // O(1)
 const top = stack[stack.length - 1]
 
 // Queue (using array - less efficient)
 const queue = []
-queue.push(item)    // enqueue O(1)
-queue.shift()       // dequeue O(n)
+queue.push(item) // enqueue O(1)
+queue.shift() // dequeue O(n)
 
 // Min/Max Heap (not built-in, may need manual implementation)
 ```
 
 ### Array Methods:
+
 ```javascript
-arr.push(item)           // Add to end O(1)
-arr.pop()                // Remove from end O(1)
-arr.unshift(item)        // Add to start O(n)
-arr.shift()              // Remove from start O(n)
-arr.slice(start, end)    // Copy subarray O(n)
+arr.push(item) // Add to end O(1)
+arr.pop() // Remove from end O(1)
+arr.unshift(item) // Add to start O(n)
+arr.shift() // Remove from start O(n)
+arr.slice(start, end) // Copy subarray O(n)
 arr.splice(start, count) // Remove/insert O(n)
-arr.sort((a,b) => a-b)   // Sort O(n log n)
-arr.reverse()            // Reverse O(n)
-arr.join(separator)      // Array to string O(n)
-str.split(separator)     // String to array O(n)
+arr.sort((a, b) => a - b) // Sort O(n log n)
+arr.reverse() // Reverse O(n)
+arr.join(separator) // Array to string O(n)
+str.split(separator) // String to array O(n)
 ```
 
 ### String Methods:
+
 ```javascript
-str.charAt(i)            // Character at index
-str.charCodeAt(i)        // ASCII code
-str.slice(start, end)    // Substring
+str.charAt(i) // Character at index
+str.charCodeAt(i) // ASCII code
+str.slice(start, end) // Substring
 str.substring(start, end)
-str.indexOf(substr)      // Find position
+str.indexOf(substr) // Find position
 str.toLowerCase()
 str.toUpperCase()
 ```
 
 ### Useful Patterns:
+
 ```javascript
 // Two pointers
 let left = 0, right = arr.length - 1
@@ -146,6 +152,7 @@ freq.set(char, (freq.get(char) || 0) + 1)
 ## File Naming Convention
 
 Each problem should be in its own file with a descriptive camelCase name:
+
 - `twoSum.js`
 - `validAnagram.js`
 - `longestSubstringWithoutRepeating.js`
@@ -153,6 +160,7 @@ Each problem should be in its own file with a descriptive camelCase name:
 ## Problem-Solving Framework
 
 Encourage this thinking process:
+
 1. **Understand** - What are inputs/outputs? Edge cases?
 2. **Pattern** - What pattern does this match?
 3. **Data structure** - What structure makes this easiest?
@@ -177,3 +185,7 @@ Encourage this thinking process:
 - Don't skip the complexity analysis
 - Don't forget to discuss edge cases
 - Don't introduce overly complex solutions when simpler ones work
+
+## Tracking Progress
+
+- Always track the problems we've finished and categorize them into what pattern was used to solve them
