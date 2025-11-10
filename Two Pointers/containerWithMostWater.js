@@ -33,17 +33,18 @@ function maxArea(height) {
     // initialize the area by finding smaller height and multiplying this to width
     let area = Math.min(height[left], height[right]) * (right - left);
 
+    // update max area if current area is greater
     if (area > max) {
       max = area;
     }
 
+    // move the pointer pointing to smaller height inward
     if (height[left] < height[right]) {
       left++;
     } else {
       right--;
     }
   }
-
   return max;
 }
 
