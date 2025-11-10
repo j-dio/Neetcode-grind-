@@ -22,17 +22,6 @@ Constraints:
 - n == height.length
 - 2 <= n <= 3 * 10^4
 - 0 <= height[i] <= 3 * 10^4
-
-JavaScript Toolkit:
-- Two pointers: left = 0, right = height.length - 1
-- Area calculation: Math.min(height[left], height[right]) * (right - left)
-- Math.max() to track maximum area
-- Move pointer with smaller height (key optimization insight!)
-
-Think about:
-- Why do we move the pointer with the smaller height?
-- What would happen if we moved the pointer with the larger height instead?
-- How does the width decrease as pointers converge?
 */
 
 function maxArea(height) {
