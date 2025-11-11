@@ -22,15 +22,13 @@ class Solution {
     // variable-size sliding window pattern
     // wl through the string with right ptr as condition to be lower than string length
     while (right < s.length) {
-      // init letter var for ease of reading
-      let letter = s[right];
-
       // if letter is not in set => add letter to set, change longestStr to max set size, increment right ptr
-      if (!set.has(letter)) {
-        set.add(letter);
+      if (!set.has(s[right])) {
+        set.add(s[right]);
         longestStr = Math.max(longestStr, set.size);
         right++;
-      } else { // if letter is in set => delete that letter at left ptr, increment left ptr
+      } else {
+        // if letter is in set => delete that letter at left ptr, increment left ptr
         set.delete(s[left]);
         left++;
       }
