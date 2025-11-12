@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This is a NeetCode 150 grinding repository for learning data structures, algorithms, and problem-solving patterns. Each problem is solved in a separate JavaScript file.
+This is a Blind 75 grinding repository for learning data structures, algorithms, and problem-solving patterns. Each problem is solved in a separate JavaScript file.
 
 ## Working Philosophy
 
@@ -71,28 +71,28 @@ This is a NeetCode 150 grinding repository for learning data structures, algorit
 
 ```javascript
 // Map - O(1) lookup, maintains insertion order
-const map = new Map()
-map.set(key, value)
-map.get(key)
-map.has(key)
-map.delete(key)
+const map = new Map();
+map.set(key, value);
+map.get(key);
+map.has(key);
+map.delete(key);
 
 // Set - O(1) lookup, unique values
-const set = new Set()
-set.add(value)
-set.has(value)
-set.delete(value)
+const set = new Set();
+set.add(value);
+set.has(value);
+set.delete(value);
 
 // Stack (using array)
-const stack = []
-stack.push(item) // O(1)
-stack.pop() // O(1)
-const top = stack[stack.length - 1]
+const stack = [];
+stack.push(item); // O(1)
+stack.pop(); // O(1)
+const top = stack[stack.length - 1];
 
 // Queue (using array - less efficient)
-const queue = []
-queue.push(item) // enqueue O(1)
-queue.shift() // dequeue O(n)
+const queue = [];
+queue.push(item); // enqueue O(1)
+queue.shift(); // dequeue O(n)
 
 // Min/Max Heap (not built-in, may need manual implementation)
 ```
@@ -100,28 +100,28 @@ queue.shift() // dequeue O(n)
 ### Array Methods:
 
 ```javascript
-arr.push(item) // Add to end O(1)
-arr.pop() // Remove from end O(1)
-arr.unshift(item) // Add to start O(n)
-arr.shift() // Remove from start O(n)
-arr.slice(start, end) // Copy subarray O(n)
-arr.splice(start, count) // Remove/insert O(n)
-arr.sort((a, b) => a - b) // Sort O(n log n)
-arr.reverse() // Reverse O(n)
-arr.join(separator) // Array to string O(n)
-str.split(separator) // String to array O(n)
+arr.push(item); // Add to end O(1)
+arr.pop(); // Remove from end O(1)
+arr.unshift(item); // Add to start O(n)
+arr.shift(); // Remove from start O(n)
+arr.slice(start, end); // Copy subarray O(n)
+arr.splice(start, count); // Remove/insert O(n)
+arr.sort((a, b) => a - b); // Sort O(n log n)
+arr.reverse(); // Reverse O(n)
+arr.join(separator); // Array to string O(n)
+str.split(separator); // String to array O(n)
 ```
 
 ### String Methods:
 
 ```javascript
-str.charAt(i) // Character at index
-str.charCodeAt(i) // ASCII code
-str.slice(start, end) // Substring
-str.substring(start, end)
-str.indexOf(substr) // Find position
-str.toLowerCase()
-str.toUpperCase()
+str.charAt(i); // Character at index
+str.charCodeAt(i); // ASCII code
+str.slice(start, end); // Substring
+str.substring(start, end);
+str.indexOf(substr); // Find position
+str.toLowerCase();
+str.toUpperCase();
 ```
 
 ### Useful Patterns:
